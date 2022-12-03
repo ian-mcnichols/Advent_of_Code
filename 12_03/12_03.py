@@ -53,7 +53,7 @@ alph = {
     'Z': 52
 }
 
-def challenge():
+def elf_sack():
     count = 0
     input_file = open("elf_input.txt", "r")
     same_items = []
@@ -80,4 +80,4 @@ def challenge():
     print('count:', count)
 
 
-challenge()
+elf_sack()
