@@ -5,7 +5,7 @@ def get_input():
     return elf_input
 
 
-def challenge():
+def lazy_elves():
     lines = get_input()
     overlaps = 0
     for line in lines:
@@ -27,7 +27,8 @@ def challenge():
 
     return
 
-def challenge2():
+
+def lazy_elves2():
     lines = get_input()
     overlaps = 0
     for line in lines:
@@ -50,4 +51,4 @@ def challenge2():
     return
 
 
-challenge2()
+lazy_elves2()
