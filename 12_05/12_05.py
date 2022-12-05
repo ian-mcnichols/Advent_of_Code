@@ -24,17 +24,9 @@ def challenge():
         amount = int(line.split(" ")[1])
         start = int(line.split(" ")[3]) - 1
         end = int(line.split(" ")[-1]) - 1
-        print("stacks:")
-        for stack in new_stacks:
-            print(stack)
-        print("Moving {} from {} to {}".format(amount, start, end))
         for i in range(amount):
             crate = new_stacks[start].pop(-1)
             new_stacks[end].append(crate)
-        print("stacks:")
-        for stack in new_stacks:
-            print(stack)
-        print("==================================")
     output = ""
     for stack in new_stacks:
         output += stack[-1].upper()
@@ -47,20 +39,12 @@ def challenge2():
         amount = int(line.split(" ")[1])
         start = int(line.split(" ")[3]) - 1
         end = int(line.split(" ")[-1]) - 1
-        print("stacks:")
-        for stack in new_stacks:
-            print(stack)
-        print("Moving {} from {} to {}".format(amount, start, end))
         crates = []
         for i in range(amount):
             crates.append(new_stacks[start].pop(-1))
         crates = crates[::-1]
         for crate in crates:
             new_stacks[end].append(crate)
-        print("stacks:")
-        for stack in new_stacks:
-            print(stack)
-        print("==================================")
     output = ""
     for stack in new_stacks:
         output += stack[-1].upper()
